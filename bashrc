@@ -123,24 +123,9 @@ xdg-open "$f"
 done
 }
 alias info='info --vi-keys'
-
-# Confronting the Wolf
-wolf="$HOME/confronting-the-wolf"
-alias wolf='cd "$wolf" && ls'
-alias wolf-backup='rsync "$wolf"/wolf-+([[:digit:]]).mkd $HOME/Documents/wolf-backup/'
-alias wolf-latest='cd "$wolf" && vim $(printf "%s\n" wolf-+([[:digit:]]).mkd | sort -r)'
-alias wolf-new='cd "$wolf" && vim wolf-"$(printf "%s\n" wolf-+([[:digit:]]).mkd | wc -l )".mkd $(printf "%s\n" wolf-+([[:digit:]]).mkd | sort -r)'
-
+alias turnoff='sudo shutdown -h now'
 alias smplayer='smplayer -fullscreen'
 
-# My Little Warhammer: Friendship is Heresy
-alias turnoff='sudo shutdown -h now'
-pony=~/Documents/fiction/FiH
-alias pony='cd "$pony" && ls'
-alias pony-latest='cd "$pony" && vim $(printf "%s\n" ponyhammer+([[:digit:]]).mkd | sort -r)'
-alias pony-new='cd "$pony" && vim pony-"$(printf "%s\n" ponyhammer+([[:digit:]]).mkd | wc -l )".mkd $(printf "%s\n" ponyhammer+([[:digit:]]).mkd | sort -r)'
-
-#alias vim='vim -p'
 set -o vi
 
 alias war='shuf -n 1 $HOME/thoughts.txt | cowsay'
