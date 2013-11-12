@@ -1,0 +1,10 @@
+startup_message off
+focusminsize 75 25
+split -v
+focus
+only
+split -v
+split -v
+focus
+caption string "%{= dd} "
+sorendition "="
